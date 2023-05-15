@@ -5,7 +5,7 @@ function App() {
     const [light, setLight] = React.useState(false)
     console.log(light)
     return (
-    <main className="off">
+    <main className={light === true ? "on" : "off"}>
       <section>
         <div className="dot"></div>
         <button
