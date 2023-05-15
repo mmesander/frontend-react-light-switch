@@ -2,11 +2,16 @@ import React from 'react';
 import './App.css';
 
 function App() {
-  return (
+    const [light, setLight] = React.useState(false)
+    console.log(light)
+    return (
     <main className="off">
       <section>
         <div className="dot"></div>
-        <button type="button">Turn on/off</button>
+        <button
+            type="button"
+            onClick={() => setLight(!light)}
+        >Turn on/off</button>
       </section>
     </main>
   );
