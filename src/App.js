@@ -11,7 +11,7 @@ function App() {
         <button
             type="button"
             onClick={() => setLight(!light)}
-        >Turn on/off</button>
+        >{light === true ? "Turn off" : "Turn on"}</button>
       </section>
     </main>
   );
